@@ -12,7 +12,11 @@ app.use('/operator',operatorController)
 //-----------------CRUD operation on origin-------------------------
 
 
-app.listen(PORT, async () =>{
+//Booking Controller
+const bookingController = require("./Controller/booking.controller")
+app.use("/bookings", bookingController)
+
+app.listen(PORT, async () => {
     await connect()
     console.log(`Server started at ${PORT} Port`)
 })
