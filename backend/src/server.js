@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 
 //Booking Controller
-const bookingController = require("./controllers/booking.controller")
+const bookingController = require("./Controller/booking.controller")
 app.use("/bookings", bookingController)
 
 app.listen(PORT, async () => {
