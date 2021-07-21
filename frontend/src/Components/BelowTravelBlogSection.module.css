@@ -1,0 +1,12 @@
+.link_class{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.link_class:hover{
+    color: blue;
+}
+.mainDiv{
+    margin-top: 8vh;
+    padding: 10px;
+}
