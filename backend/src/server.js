@@ -16,6 +16,10 @@ app.use('/operator',operatorController)
 const bookingController = require("./Controller/booking.controller")
 app.use("/bookings", bookingController)
 
+//Customers Controller
+const customerController = require("./Controller/customer.controller")
+app.use("/customers", customerController)
+
 app.listen(PORT, async () => {
     await connect()
     console.log(`Server started at ${PORT} Port`)
