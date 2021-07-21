@@ -10,7 +10,7 @@ const busSchema = new mongoose.Schema({
     total_time:{type:String,required:true},
     time_arrival:{type:String,required:true},
     fromId:{type:mongoose.Schema.Types.ObjectId,ref:"from",required:true},
-    fromId:{type:mongoose.Schema.Types.ObjectId,ref:"to",required:true}
+    toId:{type:mongoose.Schema.Types.ObjectId,ref:"to",required:true}
 },{
     versionKey:false,
     timestamps:true

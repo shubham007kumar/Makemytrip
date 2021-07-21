@@ -1,7 +1,10 @@
 const {model,Schema} = require('mongoose')
 
 const boardSchema = new Schema({
-    board:[{type:String,required:true}]
+    board:[{type:Object,required:true}]
+},{
+    versionKey:false,
+    timestamps:true
 })
 
 module.exports = model('board',boardSchema)

@@ -1,7 +1,7 @@
 const {model,Schema} = require('mongoose')
 
 const dropSchema = new Schema({
-    drop:[{type:String,required:true}]
+    drop:[{type:Object,required:true}]
 })
 
 module.exports = model('drop',dropSchema)
