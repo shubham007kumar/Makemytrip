@@ -8,7 +8,7 @@ app.use(express.json())
 
 
 //Customers Controller
-const customerController = require("./controllers/customer.controller")
+const customerController = require("./Controller/customer.controller")
 app.use("/customers", customerController)
 
 app.listen(PORT, async () => {
