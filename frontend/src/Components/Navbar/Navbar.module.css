@@ -1,0 +1,15 @@
+.mainnav{
+    background-image: linear-gradient(to bottom,#051322,#15457c);
+    background-size: 100% 616px;
+    min-height: 150vh;
+    background-repeat: no-repeat;
+}
+
+.innernav{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid white;
+    min-height: 50px;
+    max-width: 80%;
+    margin: auto;
+}
