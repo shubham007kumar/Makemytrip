@@ -10,18 +10,30 @@ const useStyles = makeStyles({
       display:"flex",
       flexDirection:"row",
       gap:"1vw",
-      flexWrap:"wrap"
+      flexWrap:"wrap",
+      justifyContent:"space-around",
+      
+      
      },
      Secondary_Boxes:{
         width:"20vw",
+        justifyContent:"center",
+        borderRadius:"20px",
+       
+        
 
+     },
+     top_box:{
+        width:"89vw",
+        margin:"auto",
+        borderRadius:"20px"
      }
    });
 
 const TravelVlogSection = () => {
     const classes = useStyles();
     return (
-        <Box  boxShadow={3}>
+        <Box className={classes.top_box}  boxShadow={3}>
                 <h1 className={styles.travelblogh1}>Travel Blog</h1>
             <Box className={classes.Main_Box_Class}>
                     <Box boxShadow={3} className={classes.Secondary_Boxes}>

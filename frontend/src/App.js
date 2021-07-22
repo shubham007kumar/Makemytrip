@@ -1,18 +1,12 @@
 import './App.css';
+import {Content} from './Components/Homepage/Content/Content.jsx';
 import Routes from './Components/Routes/Routes';
-import { AboveFooterSection } from './Components/AboveFooterSection';
-import { BelowTravelBlogSection } from './Components/BelowTravelBlogSection';
-import { BusesFromSection } from './Components/BusesFromSection';
-import { TravelVlogSection } from './Components/TravelVlogSection';
 
 function App() {
   return (
-    <div className="App">
+    <div >
     <Routes/>
-    <BusesFromSection/>
-    <TravelVlogSection/>
-    <BelowTravelBlogSection/>
-    <AboveFooterSection/>
+    <Content/>
     </div>
 )}
 export default App;

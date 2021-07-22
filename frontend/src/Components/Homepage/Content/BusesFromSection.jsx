@@ -5,7 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
    Box_Class: {
      padding:"2vw",
-     borderRadius:"20px"
+     borderRadius:"20px",
+     width:"85vw",
+     margin:"auto"
     },
   });
 
