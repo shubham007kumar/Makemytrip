@@ -7,6 +7,11 @@ const bookingSchema = new mongoose.Schema({
     //     ref: "Buses",
     //     required: true,
     // },
+    customerId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "customer",
+        required: true,
+    },
     fare: {
         type: Number,
         required: true,

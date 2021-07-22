@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
 })
 
 router.get("/", async (req, res) => {
-    const bookings = await Bookings.find();
+    const bookings = await Bookings.find().populate("customerId");
 
     return res.status(200).json({ data: bookings })
 })
