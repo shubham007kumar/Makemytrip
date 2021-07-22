@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import { busreducer } from "./Bus/reducer";
 
 const rootReducer = combineReducers({
-    Busreducer:busreducer
+    Bus:busreducer
 });
 
 const composeEnhancers =

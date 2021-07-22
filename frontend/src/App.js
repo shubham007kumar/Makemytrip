@@ -13,7 +13,6 @@ function App() {
     <TravelVlogSection/>
     <BelowTravelBlogSection/>
     <AboveFooterSection/>
-    
     </div>
 )}
 export default App;
