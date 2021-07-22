@@ -1,7 +1,7 @@
 import { FAILURE_BUS, GET_BUS , SUCCESS_BUS } from "./actionTypes";
 
 const init = {
-  dataList: [],
+  data: [],
   isLoading: false,
   isError: false,
 };
