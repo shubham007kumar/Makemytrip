@@ -4,7 +4,6 @@ import { AboveFooterSection } from './Components/AboveFooterSection';
 import { BelowTravelBlogSection } from './Components/BelowTravelBlogSection';
 import { BusesFromSection } from './Components/BusesFromSection';
 import { TravelVlogSection } from './Components/TravelVlogSection';
-import { Bus } from './Components/BusDetail/Bus';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
     <TravelVlogSection/>
     <BelowTravelBlogSection/>
     <AboveFooterSection/>
-    <Bus/>
     </div>
 )}
 export default App;
