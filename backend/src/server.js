@@ -25,11 +25,20 @@ app.use('/from',fromController)
 const toController = require('./Controller/to.controller')
 app.use('/to',toController)
 
+
 //-----------------CRUD operation on bus Schema ----------------
 const busController = require('./Controller/bus.controller')
 app.use('/bus',busController)
 
-app.listen(PORT, async () =>{
+//Booking Controller
+const bookingController = require("./Controller/booking.controller")
+app.use("/bookings", bookingController)
+
+//Customers Controller
+const customerController = require("./Controller/customer.controller")
+app.use("/customers", customerController)
+
+app.listen(PORT, async () => {
     await connect()
     console.log(`Server started at ${PORT} Port`)
 })
