@@ -2,20 +2,21 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import SimpleModal from "./Login";
 import lang from "../Images/lang.JPG";
+import { Link } from "react-router-dom";
 
 
 function Navbar() {
-
-  
   return (
     <div className={styles.mainnav}>
       <div className={styles.innernav}>
-        <img
-          src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
-          width="110"
-          style={{ paddingTop: "7px", paddingLeft: "10px" }}
-          alt="makemytrip logo"
-        />
+        <Link to="/">
+          <img
+            src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
+            width="110"
+            style={{ paddingTop: "7px", paddingLeft: "10px" }}
+            alt="makemytrip logo"
+          />
+        </Link>
         <div
           style={{
             borderLeft: "1px dotted whitesmoke",
@@ -93,7 +94,7 @@ function Navbar() {
             Manage your bookings
           </h6>
         </div>
-        <SimpleModal/>
+        <SimpleModal />
         <img
           src={lang}
           style={{
@@ -105,6 +106,7 @@ function Navbar() {
           alt="language"
         />
       </div>
+      
     </div>
   );
 }

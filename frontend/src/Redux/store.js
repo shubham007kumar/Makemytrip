@@ -1,9 +1,13 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
 import { busreducer } from "./Bus/reducer";
+import {fromreducer} from './From/reducer';
+import {toreducer} from './To/reducer';
 
 const rootReducer = combineReducers({
-    Bus:busreducer
+    Bus:busreducer,
+    From:fromreducer,
+    To:toreducer
 });
 
 const composeEnhancers =
