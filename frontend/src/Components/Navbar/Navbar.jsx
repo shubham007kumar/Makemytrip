@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import SimpleModal from "./Login";
 import lang from "../Images/lang.JPG";
 import { Link } from "react-router-dom";
-import { NavList } from "../NavList/NavList";
+
 
 function Navbar() {
   return (
@@ -106,7 +106,7 @@ function Navbar() {
           alt="language"
         />
       </div>
-      <NavList />
+      
     </div>
   );
 }

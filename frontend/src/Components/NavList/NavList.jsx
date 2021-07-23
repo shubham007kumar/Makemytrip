@@ -1,8 +1,44 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import styles from "./NavList.module.css";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { getfromdata } from "../../Redux/From/action";
+import {gettodata} from '../../Redux/To/action';
 
 function NavList() {
+  const dispatch = useDispatch();
+  const datafrom = useSelector((state) => state.From.data);
+  const datato = useSelector((state) => state.To.data);
+  const [selectedfrom, setSelectedFrom] = React.useState('')
+  const [selectedto, setSelectedTo] = React.useState('')
+  const destinationarr = {}
+
+  React.useEffect(() => {
+    dispatch(getfromdata());
+    dispatch(gettodata());
+  }, [dispatch]);
+  //console.log(data);
+  const cityfrom = datafrom.map((item) => {
+      return item.from
+  })
+
+  const cityto = datato.map((item) => {
+    return item.to
+})
+  const handlechangefrom = (e) => {
+     setSelectedFrom(e.target.value)
+  }
+  
+  const handlechangeto = (e) => {
+     setSelectedTo(e.target.value)
+
+  }
+  const handlefromto = () => {
+    destinationarr["from"] = selectedfrom
+    destinationarr["to"]= selectedto
+    console.log(destinationarr)
+  }
+  
   return (
     <div style={{ maxWidth: "80%", margin: "auto", position: "relative" }}>
       <div className={styles.navbr}>
@@ -177,7 +213,38 @@ function NavList() {
         </ul>
       </div>
       <div className={styles.fromto}>
-        <p style={{marginTop:'55px',textAlign:'center',letterSpacing:'-2',fontWeight:'600',fontSize:'15px', color:'#4a4a4a'}}>Bus Ticket Booking. <a style={{color:'#0a81ff'}}>Travelling with a group? Hire a bus.</a></p>
+        <p
+          style={{
+            marginTop: "55px",
+            textAlign: "center",
+            letterSpacing: "-2",
+            fontWeight: "600",
+            fontSize: "15px",
+            color: "#4a4a4a",
+          }}
+        >
+          Bus Ticket Booking.{" "}
+          <a style={{ color: "#0a81ff" }}>
+            Travelling with a group? Hire a bus.
+          </a>
+        </p>
+
+        <select value={selectedfrom} onChange={handlechangefrom}>
+            {cityfrom.map((ci)=>{
+                return <option value={ci}>{ci}</option>
+            })}
+            
+        </select>
+        <select value={selectedto} onChange={handlechangeto}>
+            {cityto.map((ci)=>{
+                return <option value={ci}>{ci}</option>
+            })}
+            
+        </select>
+        <input type="date"/>
+        <Link to={{pathname:'/product', state :destinationarr}}>
+        <button onClick={handlefromto}>Search</button>
+        </Link>
       </div>
     </div>
   );
