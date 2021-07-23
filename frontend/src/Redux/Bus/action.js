@@ -20,9 +20,9 @@ export const failurebus = () => {
   };
 };
 
-export const getbusdata = () => (dispatch) => {
+export const getbusdata = () => async (dispatch) => {
    dispatch(getbus())
-   axios.get('/bus')
+ await  axios.get('/bus')
    .then((res)=>{
      dispatch(successbus(res.data.data))
    })
