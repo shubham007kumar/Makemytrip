@@ -27,3 +27,7 @@
 
   border: 1px solid black;
 }
+
+.react-calendar.hide {
+    display: none;
+  }

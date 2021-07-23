@@ -3,15 +3,35 @@ import styles from "./NavList.module.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getfromdata } from "../../Redux/From/action";
-import {gettodata} from '../../Redux/To/action';
+import { gettodata } from "../../Redux/To/action";
+import Grid from "@material-ui/core/Grid";
+import DateFnsUtils from "@date-io/date-fns";
+import {
+  MuiPickersUtilsProvider,
+  KeyboardDatePicker,
+} from "@material-ui/pickers";
 
 function NavList() {
   const dispatch = useDispatch();
   const datafrom = useSelector((state) => state.From.data);
   const datato = useSelector((state) => state.To.data);
-  const [selectedfrom, setSelectedFrom] = React.useState('')
-  const [selectedto, setSelectedTo] = React.useState('')
-  const destinationarr = {}
+  const [selectedfrom, setSelectedFrom] = React.useState("");
+  const [selectedto, setSelectedTo] = React.useState("");
+  const destinationarr = {};
+  const [selecteddate, setSelectedDate] = React.useState(
+    new Date()
+  );
+  const [showcalender, setShowCalender] = React.useState(false);
+  const onchange = (date) => {
+    
+    
+    
+    setSelectedDate(date);
+  };
+
+//   const handleCalender = () => {
+//     setShowCalender(!showcalender);
+//   };
 
   React.useEffect(() => {
     dispatch(getfromdata());
@@ -19,26 +39,28 @@ function NavList() {
   }, [dispatch]);
   //console.log(data);
   const cityfrom = datafrom.map((item) => {
-      return item.from
-  })
+    return item.from;
+  });
 
   const cityto = datato.map((item) => {
-    return item.to
-})
+    return item.to;
+  });
   const handlechangefrom = (e) => {
-     setSelectedFrom(e.target.value)
-  }
-  
-  const handlechangeto = (e) => {
-     setSelectedTo(e.target.value)
+    setSelectedFrom(e.target.value);
+  };
 
-  }
-  const handlefromto = () => {
-    destinationarr["from"] = selectedfrom
-    destinationarr["to"]= selectedto
-    console.log(destinationarr)
-  }
-  
+  const handlechangeto = (e) => {
+    setSelectedTo(e.target.value);
+  };
+  const handlefromto = (date) => {
+    destinationarr["from"] = selectedfrom;
+    destinationarr["to"] = selectedto;
+    destinationarr["month"] = selecteddate.getUTCMonth() + 1;  
+    destinationarr["year"] = selecteddate.getUTCFullYear();
+    destinationarr["day"] = selecteddate.getUTCDate();
+    console.log(destinationarr);
+  };
+
   return (
     <div style={{ maxWidth: "80%", margin: "auto", position: "relative" }}>
       <div className={styles.navbr}>
@@ -230,20 +252,46 @@ function NavList() {
         </p>
 
         <select value={selectedfrom} onChange={handlechangefrom}>
-            {cityfrom.map((ci)=>{
-                return <option value={ci}>{ci}</option>
-            })}
-            
+          {cityfrom.map((ci) => {
+            return <option value={ci}>{ci}</option>;
+          })}
         </select>
         <select value={selectedto} onChange={handlechangeto}>
-            {cityto.map((ci)=>{
-                return <option value={ci}>{ci}</option>
-            })}
-            
+          {cityto.map((ci) => {
+            return <option value={ci}>{ci}</option>;
+          })}
         </select>
-        <input type="date"/>
-        <Link to={{pathname:'/product', state :destinationarr}}>
-        <button onClick={handlefromto}>Search</button>
+
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <Grid container justifyContent="space-around">
+            <KeyboardDatePicker
+              disableToolbar
+              variant="inline"
+              format="MM/dd/yyyy"
+              margin="normal"
+              id="date-picker-inline"
+              label="Date picker inline"
+              value={selecteddate}
+              onChange={onchange}
+              KeyboardButtonProps={{
+                "aria-label": "change date",
+              }}
+            />
+            {/* <KeyboardDatePicker
+              margin="normal"
+              id="date-picker-dialog"
+              label="Date picker dialog"
+              format="MM/dd/yyyy"
+              value={date}
+              onChange={onchange}
+              KeyboardButtonProps={{
+                "aria-label": "change date",
+              }}
+            /> */}
+          </Grid>
+        </MuiPickersUtilsProvider>
+        <Link to={{ pathname: "/product", state: destinationarr }}>
+          <button onClick={handlefromto}>Search</button>
         </Link>
       </div>
     </div>
