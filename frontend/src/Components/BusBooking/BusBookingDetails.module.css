@@ -1,0 +1,67 @@
+.bookingContDetails{
+
+    border: 1px solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+
+}
+
+.bookingCont{
+    width: 72%;
+    margin: 3%;
+
+}
+
+
+.proceedToPayment{
+    width: 22%;
+    margin: 3%;
+}
+
+
+.passDetailsEachCont{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.passDetailsEachContDetails{
+
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 10px;
+    box-shadow: 1px 1px 6px 4px rgba(221, 221, 221, 0.596);
+    border-radius: 4px;
+
+}
+
+
+.allInputBlocks{
+    border-radius: 4px;
+    border: 1px solid #9b9b9b;
+    padding: 11.5px 5px 11.5px 16px;
+    margin: 10px;
+}
+
+ .proceed_to_button {
+    font-size: 14px;
+    padding: 7px 15px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.1s;
+    border: none;
+    text-align: center;
+    background:linear-gradient(45deg,#50AFFE, #095EF4);
+    color: #fff;
+  }
+  
