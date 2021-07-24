@@ -19,6 +19,57 @@
     margin: 3%;
 }
 
+.fromToCont{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.fromToData{
+    width: 8vw;
+    color: #EB2026;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+
+.travellerName{
+
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.gpsandRating{
+
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 1%;
+
+}
+
+.busRating{
+    background: linear-gradient(45deg, #40DBA6,#269D96);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.viewPolicies{
+    color: #3C98FB;
+    font-size: 15px;
+    font-weight: 600;
+}
 
 .passDetailsEachCont{
 
