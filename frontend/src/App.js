@@ -4,10 +4,8 @@ import Routes from './Components/Routes/Routes';
 
 function App() {
   return (
-    <div >
-    <Routes/>
     <div>
-    <Routes/>
+     <Routes/>
     </div>
 )}
 export default App;
