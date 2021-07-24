@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from  'react-redux'
+import { useLocation } from 'react-router-dom'
 import { getbusdata } from '../../Redux/Bus/action'
-import { Container, Container1, Container2, Div, Div1, Div2,Div3, Div4, Div5,Div6,Div7 } from './BusStyle'
-export const Bus =() => {
+import { Container, Container1, Container2, Div, Div1, Div2,Div3, Div4, Div5,Div6,Div7, Seat } from './BusStyle'
+export const Bus =({props}) => {
      const dispatch = useDispatch()
+     const {state} = useLocation()
      const data = useSelector(state => state.Bus.data)
      useEffect(()=>{
          dispatch(getbusdata())
@@ -122,9 +124,9 @@ export const Bus =() => {
                                       <p>starting from</p>
                                       <p>{busDetail.price}</p>
                                       </div>
-                                      <button>Select seats</button>
+                                      <button>Select seats</button> 
                                   </Div7>
-                                
+                               
                               </Div>
                           )
                       })
