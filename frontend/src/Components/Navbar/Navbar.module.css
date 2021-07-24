@@ -1,8 +1,9 @@
 .mainnav {
   background-image: linear-gradient(to bottom, #051322, #15457c);
-  background-size: 100% 616px;
+  background-size: 100% 450px;
   min-height: 150vh;
   background-repeat: no-repeat;
+  margin-top: -53px;
 }
 
 .innernav {
