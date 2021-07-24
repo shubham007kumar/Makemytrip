@@ -4,6 +4,7 @@ import { Navbar } from "../Navbar/Navbar";
 import { Home } from "../Home";
 import { AboveFooterSection } from "../Footer/AboveFooterSection";
 import { Product } from "../Product";
+import { BusBookingDetails } from "../BusBooking/BusBookingDetails";
 
 function Routes() {
   return (
@@ -14,7 +15,10 @@ function Routes() {
           <Home />
         </Route>
         <Route exact path="/product">
-          <Product/>
+          <Product />
+        </Route>
+        <Route exact path="/booking-seats">
+          <BusBookingDetails />
         </Route>
       </Switch>
       <AboveFooterSection />

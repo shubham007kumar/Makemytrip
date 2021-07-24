@@ -4,6 +4,7 @@ import styles from './BusBookingDetails.module.css'
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateBookingDetails } from "../../Redux/Booking/action";
+import Divider from '@material-ui/core/Divider';
 
 function BusBookingDetails() {
 
@@ -89,6 +90,61 @@ function BusBookingDetails() {
 
             <div className={styles.bookingCont}>
 
+                <div>
+                    <div className={styles.fromToCont}>
+                        <div>
+                            <span className={styles.fromToData}>
+                                <div>Delhi</div>
+                                <div> <i className="ri-arrow-right-line"></i></div>
+                                <div> Goa </div>
+                            </span>
+                            <span className={styles.travellerName}>Anand Travels</span>
+                            <br />
+                            <br />
+                            <div style={{ fontSize: "13px" }}>NON A/C Sleeper</div>
+                            <br />
+                            <div className={styles.gpsandRating}>
+                                <span className={styles.busRating}>3/5</span>
+                                <span>215 rating</span>
+                                <span><i class="ri-focus-3-line"></i> GPS Enabled</span>
+                            </div>
+
+                        </div>
+                        <div style={{ textAlign: "right" }}>
+                            <div style={{ fontWeight: "600" }}>2 Seat Selected</div>
+                            <br />
+                            <div style={{ fontSize: "1.3rem", fontWeight: "600" }}>S1, S2</div>
+                            <div className={styles.viewPolicies}>View Policies</div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%" }}>
+                        <div style={{ width: "30%" }}>
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                                <span style={{ fontSize: "2rem", marginRight: "3%" }}>11:50</span>
+                                <span>25 Jul' 21, Sun</span>
+                            </div>
+                            <div><b>Delhi</b>  - Mahipalpur</div>
+                            <br />
+                            <div style={{ fontSize: "10px" }}>Starting of Mahipalpur Flyover</div>
+                        </div>
+                        <div style={{ width: "30%", textAlign: "center", fontSize: "12px" }}>
+                            <div>---------------------------------------------</div>
+                            9hrs 10mins
+                        </div>
+                        <div style={{ width: "30%" }}>
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                                <span style={{ fontSize: "2rem", marginRight: "3%" }}>7:00</span>
+                                <span>26 Jul' 21, Mon</span>
+                            </div>
+                            <div><b> Goa</b> - Curchorem Cacora</div>
+                            <br />
+                            <div style={{ fontSize: "10px" }}>Goa Bypass Curchorem-Cacora Starting of Flyover</div>
+                        </div>
+                    </div>
+                </div>
 
                 <h3>Enter Traveller Details</h3>
 
@@ -333,15 +389,49 @@ function BusBookingDetails() {
 
 
 
+            <div className={styles.proceedToPaymentCont}>
 
-            <div className={styles.proceedToPayment}>
-                <input
-                    className={styles.proceed_to_button}
-                    type="submit"
-                    value="CONTINUE TO BOOK NOW"
-                    onClick={handleProceedToPay}
-                />
+                <div className={styles.proceedToPayment}>
+                    <input
+                        className={styles.proceed_to_button}
+                        type="submit"
+                        value="CONTINUE TO BOOK NOW"
+                        onClick={handleProceedToPay}
+                    />
+                </div>
+                <br />
+                <Divider />
+                <div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "10px auto" }}>
+                        <div>
+                            Base Fare
+                        </div>
+                        <div>
+                            444
+                        </div>
+                    </div>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "10px auto" }}>
+                        <div>
+                            Tax
+                        </div>
+                        <div>
+                            20
+                        </div>
+                    </div>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "30px auto" }}>
+                        <div>
+                            <b>Total Base Price</b>
+                        </div>
+                        <div>
+                            <b>464</b>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
 
         </div>
