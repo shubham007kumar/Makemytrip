@@ -18,7 +18,6 @@ function Routes() {
           <Bus/>
         </Route>
       </Switch>
-      
     </>
   );
 }
