@@ -25,9 +25,54 @@
   margin-top: -950px;
   z-index: -1;
 
-  border: 1px solid black;
 }
 
-.react-calendar.hide {
-    display: none;
-  }
+.dest{
+    border:1px solid darkgray; 
+    max-height:90px;
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 10px;
+
+}
+#date-picker-inline{
+
+}
+
+.from{
+   
+    width:100%;
+    appearance: none;
+     height: 40%;
+    margin-top: -5px;
+    background-color: white;
+   
+}
+
+.lab{
+    color: rgb(71, 69, 69);
+    font-weight: 700;
+    font-size: 14.5px;
+}
+
+.search{
+    border-radius: 34px;
+    background-image: linear-gradient(96deg,#53b2fe,#065af3);
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 20%);
+    display: inline-block;
+    flex-shrink: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-align: center;
+width: 216px;
+height: 40px;
+font-weight: bold;
+font-size: 17px;
+margin-left: 480px;
+margin-top: 30px;
+}
