@@ -1,0 +1,25 @@
+.inside_Individual_Paper_Flex{
+    display: flex;
+    flex-direction: column;
+}
+.paper_flex{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 25vw;
+}
+.h2_Class{
+    margin: 0px;
+    font-size: 22px;
+    text-align: left;
+}
+.h3_Class{
+    margin: 0px;
+    font-size: 15px;
+    text-align:left;
+    font-weight: normal;
+}
+.circular_img_Class{
+    border-radius: 50%;
+    height: 7vh;
+}

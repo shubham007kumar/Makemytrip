@@ -6,7 +6,8 @@ function App() {
   return (
     <div >
     <Routes/>
-    <Content/>
+    <div>
+    <Routes/>
     </div>
 )}
 export default App;
