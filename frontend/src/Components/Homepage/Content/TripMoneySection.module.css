@@ -1,0 +1,40 @@
+.individualTripDiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    gap: 0.5vw;
+    width: 27vw;
+    padding: 10px;
+}
+
+.mainTripDiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1vw;
+    width: 89vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.imgTripClass{
+    height: 9vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+.imgTripDiv{
+    justify-content: space-between;
+}
+.imgTripWord{
+    width: 8vw;
+}
+.margonZero{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.insideTripDivFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.arrowClass{
+    padding: 3vh;
+}
