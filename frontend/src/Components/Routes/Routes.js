@@ -9,7 +9,7 @@ import { Bus } from "../BusDetail/Bus";
 function Routes() {
   return (
     <>
-      <Navbar />
+     
       <Switch>
         <Route exact path="/">
           <Home />
@@ -18,7 +18,6 @@ function Routes() {
           <Bus/>
         </Route>
       </Switch>
-      <AboveFooterSection />
     </>
   );
 }
