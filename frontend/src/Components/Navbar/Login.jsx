@@ -4,21 +4,10 @@ import Modal from "@material-ui/core/Modal";
 import my from "../Images/my.JPG";
 import styles from "./Navbar.module.css";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { Link } from "react-router-dom";
+import { GoogleLogin } from "react-google-login";
+import {axios} from 'axios';
 
-// function rand() {
-//   return Math.round(Math.random() * 20) - 10;
-// }
-
-// function getModalStyle() {
-//   const top = ;
-//   const left = 50 + rand();
-
-//   return {
-//     top: `${top}%`,
-//     left: `${left}%`,
-//     transform: `translate(-${top}%, -${left}%)`,
-//   };
-// }
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -34,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: " #fff",
     transform: " translate(-50%,-50%)",
     boxShadow: "0 1px 7px 0 rgb(0 0 0 / 40%)",
-    border:'2px solid white'
+    border: "2px solid white",
   },
   account: {
     padding: "7px",
@@ -108,6 +97,18 @@ export default function SimpleModal() {
     setOpen(false);
   };
 
+  const handleLogin =(res) => {
+    console.log(res)
+    axios({
+      method: "POST", 
+      url : "http://localhost:3000/api/googlelogin",
+      data: {tokenId: res.tokenId}  
+    })
+    .then((res) => {
+      console.log("login sucess", res)
+    })
+  };
+
   const body = (
     <div className={classes.paper}>
       <div className={classes.account}>
@@ -167,6 +168,15 @@ export default function SimpleModal() {
       >
         Or Login/Signup with
       </h5>
+      {/* {console.log(process.env.GOOGLE_CLIENT_ID)} */}
+      <GoogleLogin
+        clientId="399112532210-i8tpsqur39kg7if2523k17gjfio23lot.apps.googleusercontent.com"
+        buttonText="Log in with Google"
+        onSuccess={handleLogin}
+        onFailure={handleLogin}
+        cookiePolicy={"single_host_origin"}
+      />
+      {/* <Link to="/auth/google">
       <button
         style={{
           width: "99%",
@@ -187,6 +197,7 @@ export default function SimpleModal() {
           Login with Google
         </h4>
       </button>
+      </Link> */}
       <p
         style={{
           fontSize: "12px",
