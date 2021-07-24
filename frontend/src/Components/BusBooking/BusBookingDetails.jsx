@@ -4,6 +4,7 @@ import styles from './BusBookingDetails.module.css'
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateBookingDetails } from "../../Redux/Booking/action";
+import Divider from '@material-ui/core/Divider';
 
 function BusBookingDetails() {
 
@@ -388,15 +389,49 @@ function BusBookingDetails() {
 
 
 
+            <div className={styles.proceedToPaymentCont}>
 
-            <div className={styles.proceedToPayment}>
-                <input
-                    className={styles.proceed_to_button}
-                    type="submit"
-                    value="CONTINUE TO BOOK NOW"
-                    onClick={handleProceedToPay}
-                />
+                <div className={styles.proceedToPayment}>
+                    <input
+                        className={styles.proceed_to_button}
+                        type="submit"
+                        value="CONTINUE TO BOOK NOW"
+                        onClick={handleProceedToPay}
+                    />
+                </div>
+                <br />
+                <Divider />
+                <div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "10px auto" }}>
+                        <div>
+                            Base Fare
+                        </div>
+                        <div>
+                            444
+                        </div>
+                    </div>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "10px auto" }}>
+                        <div>
+                            Tax
+                        </div>
+                        <div>
+                            20
+                        </div>
+                    </div>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "80%", margin: "30px auto" }}>
+                        <div>
+                            <b>Total Base Price</b>
+                        </div>
+                        <div>
+                            <b>464</b>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
 
         </div>
