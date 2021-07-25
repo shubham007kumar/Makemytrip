@@ -39,7 +39,7 @@ export const Payment = () => {
     })
   }
   return (
-    <div style={{ background: "#ffc4ff", height: "100vh" }}>
+    <div style={{ background: "#F2F9FF", height: "100vh" }}>
       <div className={styles.notification}> <ReactNotification /></div>
       <Div1>
         <div>
@@ -54,7 +54,7 @@ export const Payment = () => {
               <p>Get additional discount</p>
               <p>Login to access payment and discount</p>
             </div>
-            <p className="btn">Login</p>
+            <p className={styles.loginButton1}>Login</p>
           </Div2>
           <Div3>
             <Div5>
@@ -134,16 +134,16 @@ export const Payment = () => {
           <h3>Fare Summary</h3>
           <Div8>
             <p>Base Fare</p>
-            <p>Rs. 2000</p>
+            <p>Rs. 444</p>
           </Div8>
           <Div9>
             <p>Other</p>
-            <p>Rs.100</p>
+            <p>Rs. 20</p>
           </Div9>
           <hr />
           <Divs>
             <h3>Total Due</h3>
-            <p>Rs. 2100</p>
+            <p>Rs. 464</p>
           </Divs>
         </Sub2>
       </Container>

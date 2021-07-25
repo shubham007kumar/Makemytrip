@@ -51,7 +51,7 @@ border-radius: 5px;
 
 `
 export const Div5 = styled.div`
-background-color: pink;
+background-color: #5BB2FF;
 h3{
     padding: 0rem 0rem 0rem 2rem;
 }
@@ -67,7 +67,7 @@ column-gap: 1rem;
 }
 `
 export const Sub2 = styled.div`
-height: 33vh;
+height: 40vh;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 background-color: #fff;
 color: #000;

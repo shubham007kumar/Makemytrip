@@ -68,3 +68,11 @@
     position: absolute;
     top: -3rem;
 }
+
+
+.loginButton1{
+    background-color: #5bb2ff;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+}
