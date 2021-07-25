@@ -9,6 +9,7 @@ import { GoogleLogin } from "react-google-login";
 import {axios} from 'axios';
 
 
+
 const useStyles = makeStyles((theme) => ({
   paper: {
     top: "53%",
@@ -108,7 +109,7 @@ export default function SimpleModal() {
       console.log("login sucess", res)
     })
   };
-
+  const google = "https://img.icons8.com/color/452/google-logo.png"
   const body = (
     <div className={classes.paper}>
       <div className={classes.account}>
@@ -168,36 +169,24 @@ export default function SimpleModal() {
       >
         Or Login/Signup with
       </h5>
-      {/* {console.log(process.env.GOOGLE_CLIENT_ID)} */}
+
       <GoogleLogin
         clientId="399112532210-i8tpsqur39kg7if2523k17gjfio23lot.apps.googleusercontent.com"
         buttonText="Log in with Google"
         onSuccess={handleLogin}
         onFailure={handleLogin}
         cookiePolicy={"single_host_origin"}
+        render={(renderProps) => (
+          <button style={{width:'99%', backgroundColor:'white', height:'40px', border:'1px solid darkgrey', borderRadius:'5px', color:'#4a4a4a', fontWeight:'bold'}} onClick={renderProps.onClick} disabled={renderProps.disabled}>
+            <img src={google} alt="google login" style={{width :'30px' ,marginTop:'2px', marginLeft:'-150px'}}/>
+            <p style={{marginTop:'-25px'}}>
+            Login with Google
+            </p>
+          </button>
+        )}
+        
       />
-      {/* <Link to="/auth/google">
-      <button
-        style={{
-          width: "99%",
-          height: "40px",
-          border: "1px solid #d0cfcf",
-          backgroundColor: "white",
-          left: "40px",
-        }}
-      >
-        <img
-          src="https://image.similarpng.com/very-thumbnail/2020/12/Illustration-of-Google-icon-on-transparent-background-PNG.png"
-          width="20"
-          style={{ marginLeft: "-130px", marginTop: "10px" }}
-        />
-        <h4
-          style={{ marginTop: "-21px", marginLeft: "30px", color: "#4a4a4a" }}
-        >
-          Login with Google
-        </h4>
-      </button>
-      </Link> */}
+      
       <p
         style={{
           fontSize: "12px",
