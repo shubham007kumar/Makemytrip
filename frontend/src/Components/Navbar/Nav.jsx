@@ -4,15 +4,18 @@ import lang from "../Images/lang.JPG";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
+
 function Nav() {
   return (
     <div className={styles.innernav}>
+    
       <Link to="/">
         <img
           src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
           width="110"
           style={{ paddingTop: "7px", paddingLeft: "10px" }}
           alt="makemytrip logo"
+          
         />
       </Link>
       <div
@@ -24,6 +27,7 @@ function Nav() {
           marginLeft: "300px",
           width: "40%",
         }}
+        className={styles.mybiz}
       >
         <img
           src="https://imgak.mmtcdn.com/mybiz/assets/images/landing/myBizLogo_light.png"
@@ -50,6 +54,7 @@ function Nav() {
             marginTop: "-17px",
             marginLeft: "45px",
           }}
+          className={styles.mmt}
         >
           MakeMyTrip for Business
         </h6>
@@ -63,12 +68,14 @@ function Nav() {
           paddingLeft: "7px",
           marginTop: "5px",
         }}
+        className={styles.trips}
       >
         <img
           src="https://americantourister.co.za/wp-content/uploads/2019/07/59422-7976_01.jpg"
           style={{ paddingTop: "4px" }}
           width="15"
           alt="myTrip icon"
+          
         />
         <h4
           style={{
@@ -92,13 +99,13 @@ function Nav() {
           Manage your bookings
         </h6>
       </div>
-
-      <SimpleModal />
+      
+        <SimpleModal className={styles.modal}/>
       <img
         src={lang}
         style={{
           width: "70%",
-          marginLeft: "55px",
+          paddingLeft: "55px",
           height: "38px",
           marginTop: "5px",
         }}

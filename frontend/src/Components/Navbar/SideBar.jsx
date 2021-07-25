@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import styles from "./Navbar.module.css";
+import React from 'react';
+import styled from 'styled-components';
+import styles from './Navbar.module.css';
 
 const StyledMenu = styled.nav`
   display: none;
   flex-direction: column;
   justify-content: center;
-  background: #effffa;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  background: #EFFFFA;
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -17,9 +17,9 @@ const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: 576px) {
-    width: 100%;
-    display: flex;
-  }
+      width: 100%;
+      display:flex;
+    }
 
   a {
     font-size: 2rem;
@@ -27,7 +27,7 @@ const StyledMenu = styled.nav`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #0d0c1d;
+    color: #0D0C1D;
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -40,62 +40,62 @@ const StyledMenu = styled.nav`
       color: #343078;
     }
   }
-`;
+`
 
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <div>
-        <div>
-          <img src="" />
-        </div>
-        <p>Login/Signup Now</p>
-        <p>Login for bst detail and offer</p>
+          <div>
+              <img src=''/>
+          </div>
+          <p>Login/Signup Now</p>
+          <p>Login for bst detail and offer</p>
       </div>
       <div>
-        <div>
-          <img src="" />
-        </div>
-        <p>View/Manage Trips</p>
-        <p>View, modify your trips</p>
+      <div>
+              <img src=''/>
+          </div>
+          <p>View/Manage Trips</p>
+          <p>View, modify your trips</p>
       </div>
       <div>
-        <img />
-        <p>Gift Cards</p>
+          <img/>
+          <p>Gift Cards</p>
       </div>
       <div>
-        <img />
-        <p> Wallet</p>
+          <img/>
+          <p> Wallet</p>
       </div>
       <div>
-        <img />
-        <p>Settings</p>
-        <img />
+          <img/>
+          <p>Settings</p>
+          <img/>
       </div>
 
       <div>
-        <img />
-        <p>Travel Offers</p>
+          <img/>
+          <p>Travel Offers</p>
       </div>
       <div>
-        <img />
-        <p>Flights</p>
+      <img/>
+          <p>Flights</p>
       </div>
       <div>
-        <img />
-        <p>Hotels</p>
+      <img/>
+          <p>Hotels</p>
       </div>
       <div>
-        <img />
-        <p>Trains</p>
+      <img/>
+          <p>Trains</p>
       </div>
       <div>
-        <img />
-        <p>Holiday Offers</p>
+      <img/>
+          <p>Holiday Offers</p>
       </div>
     </StyledMenu>
-  );
-};
+  )
+}
 
 const StyledBurger = styled.button`
   position: absolute;
@@ -113,8 +113,8 @@ const StyledBurger = styled.button`
   z-index: 10;
 
   @media (max-width: 576px) {
-    display: flex;
-  }
+     display: flex;
+    }
   &:focus {
     outline: none;
   }
@@ -122,26 +122,26 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
+    background: ${({ open }) => open ? '#0D0C1D' : '#EFFFFA'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
 
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+      opacity: ${({ open }) => open ? '0' : '1'};
+      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
 
     :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
-`;
+`
 
 const Burger = ({ open, setOpen }) => {
   return (
@@ -150,7 +150,8 @@ const Burger = ({ open, setOpen }) => {
       <div />
       <div />
     </StyledBurger>
-  );
-};
+  )
+}
 
-export { Menu, Burger };
+
+export {Menu,Burger}

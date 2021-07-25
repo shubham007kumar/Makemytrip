@@ -14,9 +14,25 @@
   max-width: 80%;
   margin: auto;
 }
+.logo{
+  display: none;
+}
 .inp{
     border:'2px solid black'
 }
 .colour{
     color:#65afff
+}
+
+@media (max-width: 576px) {
+
+  .innernav{
+    display: none;
+  }
+  .logo{
+    display: block;
+    width:110px;
+    /* padding-top: 7px;
+     padding-left: 10px  */
+  }
 }
