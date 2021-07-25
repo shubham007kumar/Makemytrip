@@ -95,6 +95,8 @@ export const Outer =styled.div`
 display: flex;
 column-gap: 2rem;
 align-items: center;
+margin-top: -1rem;
+margin-bottom: 0.1rem;
 padding:0rem 0rem 0rem 12rem;
 .icon{
     font-size:1.8rem;
@@ -117,5 +119,6 @@ padding-top: 1rem;
 color: #757575; 
 `
 export const Block = styled.div`
-
+height: 7vh;
+background-color: #000051;
 `
