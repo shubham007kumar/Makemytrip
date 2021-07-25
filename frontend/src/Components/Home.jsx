@@ -20,11 +20,7 @@ function Home() {
       <Navbar />
       <NavList />
       <Content/>
-      {/* <BusesFromSection />
-      <TravelVlogSection />
-      <AboveFooterSection />
-      <BelowTravelBlogSection />
-      <AboveFooterSection /> */}
+      
     </div>
   );
 }

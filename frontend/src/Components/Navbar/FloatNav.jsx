@@ -213,7 +213,7 @@ function FloatNav() {
           </p>
         </ul>
       </div>
-      <Link>
+     
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" }}>
         <div className={styles.green}>
           <p className={styles.my}>my</p>
@@ -232,7 +232,6 @@ function FloatNav() {
         </p>
         <img src={lang1} alt="language" style={{ marginTop: "10px" }} />
       </div>
-      </Link>
     </div>
   );
 }

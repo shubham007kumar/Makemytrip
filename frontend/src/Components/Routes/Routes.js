@@ -1,10 +1,10 @@
-
 import { Route, Switch } from "react-router-dom";
 import React from "react";
 import { Home } from "../Home";
 
 import { Product } from "../Product";
-import { Nav } from "../Navbar/Nav";
+import { BusBookingDetails } from "../BusBooking/BusBookingDetails";
+
 import { Bus } from "../BusDetail/Bus";
 function Routes() {
   return (
@@ -15,8 +15,12 @@ function Routes() {
         </Route>
         <Route exact path="/product">
           <Product />
-          <Bus/>
+          <Bus />
         </Route>
+        <Route exact path="/booking-seats">
+          <BusBookingDetails />
+        </Route>
+
       </Switch>
     </>
   );

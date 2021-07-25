@@ -13,12 +13,57 @@
 
 }
 
-
-.proceedToPayment{
-    width: 22%;
-    margin: 3%;
+.fromToCont{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+
+.fromToData{
+    width: 8vw;
+    color: #EB2026;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+
+.travellerName{
+
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.gpsandRating{
+
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 1%;
+
+}
+
+.busRating{
+    background: linear-gradient(45deg, #40DBA6,#269D96);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.viewPolicies{
+    color: #3C98FB;
+    font-size: 15px;
+    font-weight: 600;
+}
 
 .passDetailsEachCont{
 
@@ -48,6 +93,22 @@
     margin: 10px;
 }
 
+
+.proceedToPaymentCont{
+    border: 1px solid silver;
+    padding: 1%;
+    padding-right: 2%;
+    height: 35vh;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+.proceedToPayment{
+    width: 100%;
+    margin: 3%;
+   
+}
+
  .proceed_to_button {
     font-size: 14px;
     padding: 7px 15px;
@@ -55,7 +116,7 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     overflow: hidden;
     text-decoration: none;
     transition: 0.1s;
@@ -63,5 +124,9 @@
     text-align: center;
     background:linear-gradient(45deg,#50AFFE, #095EF4);
     color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 17px;
+
   }
   
