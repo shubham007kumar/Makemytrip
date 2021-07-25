@@ -1,14 +1,10 @@
 import React from "react";
-import { BelowTravelBlogSection } from "./Content/BelowTravelBlogSection";
-import { BusesFromSection } from "./Content/BusesFromSection";
-import { TravelVlogSection } from "./Content/TravelVlogSection";
 import { NavList } from "../../src/Components/NavList/NavList";
 import { Navbar } from "./Navbar/Navbar";
-
-import { AboveFooterSection } from "../Components/Footer/AboveFooterSection";
 import { Nav } from "./Navbar/Nav";
 import { FloatNav } from "./Navbar/FloatNav";
 import { Menu, Burger } from "../Components/Navbar/SideBar";
+import { Content } from "./Homepage/Content/Content";
 
 function Home() {
   const [open, setOpen] = React.useState(false);
@@ -23,11 +19,12 @@ function Home() {
       <Nav />
       <Navbar />
       <NavList />
-      <BusesFromSection />
+      <Content/>
+      {/* <BusesFromSection />
       <TravelVlogSection />
       <AboveFooterSection />
       <BelowTravelBlogSection />
-      <AboveFooterSection />
+      <AboveFooterSection /> */}
     </div>
   );
 }

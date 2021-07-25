@@ -9,7 +9,7 @@ const useStyles = makeStyles({
      borderRadius:"20px",
      width:"85vw",
      margin:"auto",
-     
+     backgroundColor:'white'
     },
     Box_Card_Flex:{
         display:"flex",

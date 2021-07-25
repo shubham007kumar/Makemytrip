@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../NavList/NavList.module.css";
 import lang1 from "../Images/lang1.JPG";
+import SimpleModal from "./Login";
 
 function FloatNav() {
   const [show, setShow] = React.useState(true);
@@ -212,6 +213,7 @@ function FloatNav() {
           </p>
         </ul>
       </div>
+      <Link>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" }}>
         <div className={styles.green}>
           <p className={styles.my}>my</p>
@@ -230,6 +232,7 @@ function FloatNav() {
         </p>
         <img src={lang1} alt="language" style={{ marginTop: "10px" }} />
       </div>
+      </Link>
     </div>
   );
 }

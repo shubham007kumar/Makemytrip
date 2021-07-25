@@ -112,7 +112,14 @@ function NavList() {
     },
   });
   return (
-    <div style={{ maxWidth: "80%", margin: "auto", position: "relative" }}>
+    <div
+      style={{
+        maxWidth: "80%",
+        margin: "auto",
+        position: "relative",
+        marginBottom: "11vh",
+      }}
+    >
       <div className={styles.navbr}>
         <ul>
           <img
@@ -313,7 +320,15 @@ function NavList() {
             <p className={styles.lab} style={{ marginTop: "5px" }}>
               From
             </p>
-            <div style={{fontSize:'38px', fontWeight:'bolder', marginTop:'-18px'}}>{selectedfrom ? selectedfrom : cityfrom[0]}</div>
+            <div
+              style={{
+                fontSize: "38px",
+                fontWeight: "bolder",
+                marginTop: "-18px",
+              }}
+            >
+              {selectedfrom ? selectedfrom : cityfrom[0]}
+            </div>
             <select
               className={styles.from}
               style={
@@ -343,7 +358,15 @@ function NavList() {
             <p className={styles.lab} style={{ marginTop: "5px" }}>
               To
             </p>
-            <div style={{fontSize:'38px', fontWeight:'bolder', marginTop:'-18px'}}>{selectedto ? selectedto : cityto[0]}</div>
+            <div
+              style={{
+                fontSize: "38px",
+                fontWeight: "bolder",
+                marginTop: "-18px",
+              }}
+            >
+              {selectedto ? selectedto : cityto[0]}
+            </div>
             <select
               className={styles.from}
               value={selectedto}
@@ -393,7 +416,9 @@ function NavList() {
           </div>
         </div>
         <Link to={{ pathname: "/product", state: destinationarr }}>
-          <button onClick={handlefromto} className={styles.search}>Search</button>
+          <button onClick={handlefromto} className={styles.search}>
+            Search
+          </button>
         </Link>
       </div>
     </div>
