@@ -1,3 +1,4 @@
+
 import { Route, Switch } from "react-router-dom";
 import React from "react";
 import { Home } from "../Home";
@@ -5,7 +6,6 @@ import { Home } from "../Home";
 import { Product } from "../Product";
 import { Nav } from "../Navbar/Nav";
 import { Bus } from "../BusDetail/Bus";
-
 function Routes() {
   return (
     <>
@@ -18,7 +18,6 @@ function Routes() {
           <Bus/>
         </Route>
       </Switch>
-      
     </>
   );
 }

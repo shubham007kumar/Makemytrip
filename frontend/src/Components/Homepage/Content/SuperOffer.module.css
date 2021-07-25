@@ -1,0 +1,71 @@
+.superOfferNavBar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr;
+   
+    height: 4vh;
+    gap: 3vw;
+}
+.h1Class{
+    margin-top: 0px ;
+    margin-bottom: 2px;
+    padding: 2px;
+    
+}
+.SuperOfferButtonClass{
+    border: none;
+    width: 7vw;
+    border-bottom: black;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: white;
+}
+.SuperOfferButtonClass:hover{
+    color: blue;
+}
+.buttonFlex{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+   
+}
+.backArrowButton{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 5vh;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 10px ;
+    border: none;
+    color: blue;
+}
+.frontArrowButton{
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 5vh;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 10px ;
+    border: none;
+    color: blue;
+}
+.viewDetailsClass{
+    text-align: right;
+    color: rgb(0, 102, 255);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.Cardflex{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+   overflow-x: hidden;
+   max-width: 88vw;
+}
+.paraClaass{
+    font-weight: bold;
+    color: gray;
+}
+.termsandConditions{
+    font-size: 10px;
+    text-align: end;
+}

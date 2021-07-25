@@ -35,7 +35,6 @@ justify-content:center;
 column-gap: 15rem;
 border: 1px solid black;
 margin-bottom: 1rem;
-padding: 1rem 1rem;
 :hover{
     border: 1px solid #29b6f6;
     background-color: #eceff1;
@@ -85,4 +84,38 @@ padding: 0rem 2rem;
 flex-direction: column;
 justify-content: space-between;
 background-color: powderblue;
+.btn{
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    background-color: #7986cb;
+}
+`
+export const Outer =styled.div`
+display: flex;
+column-gap: 2rem;
+align-items: center;
+padding:0rem 0rem 0rem 12rem;
+.icon{
+    font-size:1.8rem;
+    color: #757575;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+}
+.flight{
+  display: flex;
+  flex-direction: column;
+}
+`
+
+export const Inner = styled.div`
+display: flex;
+column-gap: 0.5rem;
+padding-left: 27rem;
+align-items: center;
+padding-top: 1rem;
+color: #757575; 
+`
+export const Block = styled.div`
+
 `
