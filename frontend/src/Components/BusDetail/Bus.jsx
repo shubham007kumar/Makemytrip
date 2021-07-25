@@ -2,11 +2,20 @@ import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from  'react-redux'
 import { useLocation } from 'react-router-dom'
 import { getbusdata } from '../../Redux/Bus/action'
-import { Container, Container1, Container2, Div, Div1, Div2,Div3, Div4, Div5,Div6,Div7, Seat } from './BusStyle'
+import { Container, Container1, Container2, Div, Div1, Div2,Div3, Div4, Div5,Div6,Div7, Inner, Outer,Block } from './BusStyle'
+import FlightIcon from '@material-ui/icons/Flight';
+import HotelIcon from '@material-ui/icons/Hotel';
+import HomeIcon from '@material-ui/icons/Home';
+import TrainIcon from '@material-ui/icons/Train';
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
+import DirectionsBikeIcon from '@material-ui/icons/DirectionsBike';
+import PersonIcon from '@material-ui/icons/Person';
+
 export const Bus =({props}) => {
      const dispatch = useDispatch()
      const {state} = useLocation()
      const data = useSelector(state => state.Bus.data)
+     console.log(data)
      useEffect(()=>{
          dispatch(getbusdata())
      },[dispatch])
@@ -18,9 +27,23 @@ export const Bus =({props}) => {
             console.log(data)
            }
      },[data])
-     console.log(data)
     return(
         <>
+        <Outer>
+          <img style={{width:"6vw",marginRight:"4rem",marginTop:"1.5rem"}} src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png" alt="blank"/> 
+          <FlightIcon className="icon" />  
+          <HotelIcon className="icon" />
+          <HomeIcon className="icon"/>
+          <TrainIcon className="icon"/>
+          <DirectionsCarIcon className="icon"/>
+          <DirectionsBikeIcon className="icon" />
+          <Inner>
+          <PersonIcon/>
+          <p>Login</p>
+          </Inner>
+        </Outer>
+         <Block>
+         </Block>
           <Container>
                  <Container1>
                         <div style={{height:"32vh",overflow:"hidden"}} className="board">
@@ -124,7 +147,7 @@ export const Bus =({props}) => {
                                       <p>starting from</p>
                                       <p>{busDetail.price}</p>
                                       </div>
-                                      <button>Select seats</button> 
+                                      <button className="btn">Select seats</button> 
                                   </Div7>
                                
                               </Div>
