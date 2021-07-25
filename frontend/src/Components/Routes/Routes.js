@@ -6,6 +6,9 @@ import { Product } from "../Product";
 import { BusBookingDetails } from "../BusBooking/BusBookingDetails";
 
 import { Bus } from "../BusDetail/Bus";
+
+import { Payment } from "../payment/payment";
+
 function Routes() {
   return (
     <>
@@ -19,6 +22,10 @@ function Routes() {
         </Route>
         <Route exact path="/booking-seats">
           <BusBookingDetails />
+        </Route>
+
+        <Route exact path="/payment-page">
+          <Payment />
         </Route>
 
       </Switch>
