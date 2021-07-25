@@ -1,0 +1,12 @@
+.mainDivGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2vh;
+    text-align: left;
+    padding: 10px;
+    width: 89vw;
+    margin: auto;
+}
+.individualGrid{
+    width: 28vw;
+}
