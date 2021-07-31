@@ -15,7 +15,6 @@ router.post("/", async (req, res) => {
 
 router.get('/',async (req,res) => {
   const dta = req.body.bus
-  console.log(dta)
   try{
       const bus = await Bus.find().populate('operatorId',{name_operator:1,_id:0}).populate({path:'fromId',populate:{path:'boardpoint'}}).populate({path:'toId',populate:{path:'droppoint'}}).exec()
       return res.status(200).json({data:bus})
