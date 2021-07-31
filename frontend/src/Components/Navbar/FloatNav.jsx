@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../NavList/NavList.module.css";
 import lang1 from "../Images/lang1.JPG";
-import SimpleModal from "./Login";
 
 function FloatNav() {
   const [show, setShow] = React.useState(true);
@@ -45,6 +44,7 @@ function FloatNav() {
       <div className={styles.floatnav}>
         <ul>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/1606503-200.png"
             width="80"
             style={{ marginLeft: "-30px", marginTop: "-30px" }}
@@ -63,6 +63,7 @@ function FloatNav() {
         </ul>
         <ul>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/803591-200.png"
             width="40"
             style={{ marginLeft: "-20px", marginTop: "-10px" }}
@@ -81,6 +82,7 @@ function FloatNav() {
         </ul>
         <ul style={{ width: "70%" }}>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/3626992-200.png"
             width="40"
             style={{ marginLeft: "-18px", marginTop: "-10px" }}
@@ -99,6 +101,7 @@ function FloatNav() {
         </ul>
         <ul style={{ width: "100%", marginLeft: "20px" }}>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/1990676-200.png"
             width="50"
             style={{ marginLeft: "-5px", marginTop: "-19px" }}
@@ -117,6 +120,7 @@ function FloatNav() {
         </ul>
         <ul style={{ marginLeft: "23px" }}>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/2668613-200.png"
             width="30"
             style={{ marginLeft: "-20px", marginTop: "-4px" }}
@@ -136,6 +140,7 @@ function FloatNav() {
         <Link to="" style={{ textDecoration: "none" }}>
           <ul>
             <img
+              alt="blank"
               src="https://static.thenounproject.com/png/4078384-200.png"
               width="30"
               style={{ marginLeft: "-10px", marginTop: "-4px" }}
@@ -155,6 +160,7 @@ function FloatNav() {
         </Link>
         <ul>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/4077543-200.png"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
@@ -173,6 +179,7 @@ function FloatNav() {
         </ul>
         <ul>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/2995196-200.png"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
@@ -191,6 +198,7 @@ function FloatNav() {
         </ul>
         <ul>
           <img
+            alt="blank"
             src="https://static.thenounproject.com/png/2165520-200.png"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
@@ -206,6 +214,7 @@ function FloatNav() {
           >
             More
             <img
+              alt="blank"
               src="https://static.thenounproject.com/png/636007-200.png"
               width="15"
               style={{ marginLeft: "5px" }}

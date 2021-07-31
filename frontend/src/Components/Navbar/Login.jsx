@@ -1,10 +1,9 @@
 import React from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import my from "../Images/my.JPG";
 import styles from "./Navbar.module.css";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import { Link } from "react-router-dom";
 import { GoogleLogin } from "react-google-login";
 import {axios} from 'axios';
 
@@ -196,9 +195,9 @@ export default function SimpleModal() {
         }}
       >
         By proceeding, you agree to MakeMyTrip's
-        <a className={styles.colour}> Privacy Policy</a>,
-        <a className={styles.colour}> User Agreement</a> and
-        <a className={styles.colour}> T&Cs</a>
+        <p className={styles.colour}> Privacy Policy</p>,
+        <p className={styles.colour}> User Agreement</p> and
+        <p className={styles.colour}> T&Cs</p>
       </p>
     </div>
   );

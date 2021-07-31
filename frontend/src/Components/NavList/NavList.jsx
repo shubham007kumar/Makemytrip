@@ -125,6 +125,7 @@ function NavList() {
           <img
             src="https://static.thenounproject.com/png/1606503-200.png"
             width="80"
+            alt="blank"
             style={{ marginLeft: "-30px", marginTop: "-30px" }}
           />
           <p
@@ -142,6 +143,7 @@ function NavList() {
         <ul>
           <img
             src="https://static.thenounproject.com/png/803591-200.png"
+            alt="blank"
             width="40"
             style={{ marginLeft: "-20px", marginTop: "-10px" }}
           />
@@ -160,6 +162,7 @@ function NavList() {
         <ul>
           <img
             src="https://static.thenounproject.com/png/3626992-200.png"
+            alt="blank"
             width="40"
             style={{ marginLeft: "-18px", marginTop: "-10px" }}
           />
@@ -178,6 +181,7 @@ function NavList() {
         <ul style={{ width: "80%" }}>
           <img
             src="https://static.thenounproject.com/png/1990676-200.png"
+            alt="blank"
             width="50"
             style={{ marginLeft: "-5px", marginTop: "-19px" }}
           />
@@ -196,6 +200,7 @@ function NavList() {
         <ul style={{ marginLeft: "23px" }}>
           <img
             src="https://static.thenounproject.com/png/2668613-200.png"
+            alt="blank"
             width="30"
             style={{ marginLeft: "-20px", marginTop: "-4px" }}
           />
@@ -215,6 +220,7 @@ function NavList() {
           <ul>
             <img
               src="https://static.thenounproject.com/png/4078384-200.png"
+              alt="blank"
               width="30"
               style={{ marginLeft: "-10px", marginTop: "-4px" }}
             />
@@ -234,6 +240,7 @@ function NavList() {
         <ul>
           <img
             src="https://static.thenounproject.com/png/4077543-200.png"
+            alt="blank"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
           />
@@ -252,6 +259,7 @@ function NavList() {
         <ul>
           <img
             src="https://static.thenounproject.com/png/2995196-200.png"
+            alt="blank"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
           />
@@ -270,6 +278,7 @@ function NavList() {
         <ul>
           <img
             src="https://static.thenounproject.com/png/2165520-200.png"
+            alt="blank"
             width="30"
             style={{ marginLeft: "-10px", marginTop: "-4px" }}
           />
@@ -285,6 +294,7 @@ function NavList() {
             More
             <img
               src="https://static.thenounproject.com/png/636007-200.png"
+                alt="blank"
               width="15"
               style={{ marginLeft: "5px" }}
             />
@@ -303,9 +313,9 @@ function NavList() {
           }}
         >
           Bus Ticket Booking.{" "}
-          <a style={{ color: "#0a81ff" }}>
+          <p style={{ color: "#0a81ff" }}>
             Travelling with a group? Hire a bus.
-          </a>
+          </p>
         </p>
         <div className={styles.dest}>
           <div
