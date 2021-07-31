@@ -47,50 +47,50 @@ const Menu = ({ open }) => {
     <StyledMenu open={open}>
       <div>
           <div>
-              <img src=''/>
+              <img   alt="blank" src=''/>
           </div>
           <p>Login/Signup Now</p>
           <p>Login for bst detail and offer</p>
       </div>
       <div>
       <div>
-              <img src=''/>
+              <img   alt="blank" src=''/>
           </div>
           <p>View/Manage Trips</p>
           <p>View, modify your trips</p>
       </div>
       <div>
-          <img/>
+          <img   alt="blank"/>
           <p>Gift Cards</p>
       </div>
       <div>
-          <img/>
+          <img   alt="blank"/>
           <p> Wallet</p>
       </div>
       <div>
-          <img/>
+          <img   alt="blank"/>
           <p>Settings</p>
-          <img/>
+          <img  alt="blank"/>
       </div>
 
       <div>
-          <img/>
+          <img   alt="blank"/>
           <p>Travel Offers</p>
       </div>
       <div>
-      <img/>
+      <img   alt="blank"/>
           <p>Flights</p>
       </div>
       <div>
-      <img/>
+      <img   alt="blank"/>
           <p>Hotels</p>
       </div>
       <div>
-      <img/>
+      <img   alt="blank"/>
           <p>Trains</p>
       </div>
       <div>
-      <img/>
+      <img   alt="blank"/>
           <p>Holiday Offers</p>
       </div>
     </StyledMenu>
