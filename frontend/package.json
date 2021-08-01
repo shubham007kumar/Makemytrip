@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://shubham007kumar.github.io/Makemytrip",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://makesmytrip.herokuapp.com/",
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "date-fns": "^2.23.0",
+    "gh-pages": "^3.2.3",
     "google-auth-library": "^7.3.0",
     "react": "^17.0.2",
     "react-calendar": "^3.4.0",
@@ -29,6 +31,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
