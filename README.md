@@ -74,7 +74,7 @@ Makemytrip
     
 ```  
 
-## Glimpse of my work!
+## Glimpses of our work!
 
  ![make1](https://user-images.githubusercontent.com/34106521/126891350-11bb7d81-0619-4f8c-88f2-882f690d5b48.PNG)
  ![trip2](https://user-images.githubusercontent.com/34106521/126891706-0203df94-d8be-4019-857a-1de1e640925e.PNG)
@@ -83,7 +83,7 @@ Makemytrip
 ## Contributors
 
 <a href="../../../../00shalini" target="_blank"><img src="https://avatars.githubusercontent.com/u/61345989?v=4" alt="Shubham Kumar" width="70" height="70" border="10" /></a>
-<a href="../../../../Amol-Talekar" target="_blank"><img src="https://avatars.githubusercontent.com/u/76869468?v=4" alt="Shubham Kumar" width="70" height="70" border="10" /></a> 
+<a href="../../../../Amol-Talekar" target="_blank"><img src="https://avatars.githubusercontent.com/u/76869468?v=4" alt="Amol Talekar" width="70" height="70" border="10" /></a> 
 <a href="../../../../info-vivekranjan" target="_blank"><img src="https://avatars.githubusercontent.com/u/75258584?v=4" alt="Shubham Kumar" width="70" height="70" border="10" /></a>
 <a href="../../../../shubham007kumar" target="_blank"><img src="https://avatars1.githubusercontent.com/u/34106521?s=460&v=4" alt="Shubham Kumar" width="70" height="70" border="10" /></a>
 
